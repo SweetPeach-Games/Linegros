@@ -1,37 +1,6 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-
-<head>
-<meta http-equiv="Content-Language" content="zh-cn" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>LINEGROS</title>
-<style type="text/css">
-.style1 {
-	font-size: 65pt;
-	border-style: solid;
-	border-width: 1px;
-	padding: 1px 4px;
-}
-.style2 {
-	font-size: x-large;
-	font-family: 微软雅黑, "Arial Unicode MS";
-}
-.style3 {
-	font-size: 45pt;
-	color: #FFFFFF;
-	font-family: 微软雅黑, "Arial Unicode MS";
-	background-color: #000000;
-}
-.style4 {
-	font-family: "Courier New", Courier, monospace;
-}
-.style6 {
-	font-family: 微软雅黑, "Arial Unicode MS";
-}
-</style>
-<script language="Javascript">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head><meta http-equiv="Content-Language" content="zh-cn" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>LINEGROS</title><script language="Javascript">
  
-//NS and IE3 below don't support Navigator.userLanguage property, so we cannot do auto redirection
+
  
 function fptcsc_TestBrowser()
 {
@@ -50,22 +19,22 @@ function fptcsc_redirection()
  
  strBrowserLang = new String("");
  
- strBrowserLang = navigator.userLanguage; //IE support it only
+ strBrowserLang = navigator.userLanguage; 
    
- // for debug
- // window.alert(strBrowserLang);
+ 
+ 
  
  switch (strBrowserLang)
  {
  
- case "zh-sg":  ;  //Chinese (Singapore)
- case "zh-cn": {   //Chinese (PRC)
+ case "zh-sg":  ;  
+ case "zh-cn": {   
   
     if (strChsSiteURL.length > 0) window.location.replace(strChsSiteURL); return true;}
   
- case "zh-hk": //Chinese (Hong Kong S.A.R.)
- case "zh-mo": //Chinese (Macau S.A.R.)
- case "zh-tw":{ //Chinese (Taiwan)
+ case "zh-hk": 
+ case "zh-mo": 
+ case "zh-tw":{ 
  
   if (strChtSiteURL.length > 0) window.location.replace(strChtSiteURL); return true;}
   }
@@ -73,7 +42,7 @@ return false;
 }
  
 </script>
-<script LANGUAGE="JavaScript">//strChsSiteURL etc. strings goes here
+<script LANGUAGE="JavaScript">
 strChsSiteURL = new String("");
 strChtSiteURL = new String("");
 strRedirectionPrompt = new String("<p>Your browser doesn't support auto redirection according to your browser language. \ Please select the language you want to visit...</p>");
@@ -82,13 +51,13 @@ if (fptcsc_TestBrowser()&&fptcsc_redirection()) {}
  else {
   document.write (strRedirectionPrompt);
  
-  //button for CHS site
+  
   document.write("<input value="Simplified Chinese" type=button onclick=");
   document.write ("\""+"window.location.href='");
   document.write (strChsSiteURL);
   document.write ("'"+"\""+">");
   
-  //button for CHT site
+  
   document.write("<input value="Traditional Chinese" type=button onclick=");
   document.write ("\""+"window.location.href='");
   document.write (strChtSiteURL);
@@ -97,47 +66,26 @@ if (fptcsc_TestBrowser()&&fptcsc_redirection()) {}
   }
   
 </script>
-</head>
-
-<body>
-
-<p class="style1"><em><span class="style3">LINEGROS</span></em><span class="style3">--主页</span></p>
-<p class="style2">Welcome to LINEGROS!</p>
-<p class="style2">MADE BY @upbingun233 和 @XiaoYv</p>
-<p class="style2">以下是我们的介绍部分。</p>
-<p class="style6">项目地址<a href="https://github.com/upbingun233/Linegros">Github</a></p>
-<p class="style6">（使用加速的521github?）<a href="https://521github.com/upbingun233/Linegros">521github</a></p>
-<p class="style6">编写代码：JavaFX8</p>
-<p class="style6">开发阶段：Preview</p>
-<p class="style6">鸣谢部分：</p>
-<font COLOR="#6a3e3e">
-<p ALIGN="LEFT"><span class="style6">text</span></font><span class="style6">.setText(<font COLOR="#2a00ff">&quot;Copyright 
-(c) SweetPeach.版权所有.\n&quot;</font></span><span class="style4"><span class="style6">+</span></span></p>
-<p ALIGN="LEFT" class="style6"><font COLOR="#2a00ff">&quot;logo设计、绘图 
-：XiaoYv、upbingun、覃一轩、苏富明.\n&quot;</font>+</p>
-<p ALIGN="LEFT" class="style6"><font SIZE="3" COLOR="#2a00ff">&quot;开发者：XiaoYv、upbingun.\n&quot;</font>+</p>
-<p ALIGN="LEFT" class="style6"><font SIZE="3" COLOR="#2a00ff">&quot;原作（TubroWarp）：Linegros 
-(by XiaoYv).\n&quot;</font>+</p>
-<p ALIGN="LEFT" class="style6"><font COLOR="#2a00ff">
-&quot;客服：txy1145141919@outlook.com .\n&quot;</font>+</p>
-<p ALIGN="LEFT" class="style6"><font COLOR="#2a00ff">&quot;bug反馈：upbingun@163.com 
-.\n&quot;</font>+</p>
-<p ALIGN="LEFT" class="style6"><font COLOR="#2a00ff">&quot;引擎：JavaFX8 (Oracle 
-OpenJDK8).\n&quot;</font>+</p>
-<p ALIGN="LEFT" class="style6"><font SIZE="3" COLOR="#2a00ff">&quot;字体：OPlusSans 
-3.0&amp;Streaming Neon，包含在/fonts中.\n&quot;</font>+</p>
-<p ALIGN="LEFT" class="style6"><font COLOR="#2a00ff">
-&quot;（由于OPPO公司并没有OPlusSans的信息，所以该字体随时可能更换掉）\n&quot;</font>+</p>
-<p ALIGN="LEFT" class="style6"><font COLOR="#2a00ff">&quot;其中：\n&quot;</font>+</p>
-<p ALIGN="LEFT" class="style6"><font SIZE="3" COLOR="#2a00ff">
-&quot;XiaoYv提供了Logo设计，upbingun同样提供。使用的是由XiaoYv设计的.\n&quot;</font>+</p>
-<p ALIGN="LEFT" class="style6"><font SIZE="3" COLOR="#2a00ff">&quot;Liner（莱恩）主要由XiaoYv设计.\n&quot;</font>+</p>
-<p ALIGN="LEFT" class="style6"><font COLOR="#2a00ff">&quot;请尊重他们的劳动成果，即使我们开源了.\n&quot;</font>+</p>
-<p ALIGN="LEFT" class="style6"><font SIZE="3" COLOR="#2a00ff">&quot;项目Github地址：https://github.com/upbingun233/Linegros\n&quot;</font>+</p>
-<p ALIGN="LEFT" class="style6"><font COLOR="#2a00ff">&quot;感谢他们的贡献！\n\n&quot;</font>+</p>
-<p class="style6"><font COLOR="#2a00ff">&quot;和你.&quot;</font>);</p>
-<p class="style6">&nbsp;</p>
-
-</body>
-
-</html>
+<style type="text/css">
+.style1 {
+	font-size: xx-large;
+	text-align: center;
+}
+.style2 {
+	text-align: left;
+}
+.style3 {
+	text-align: left;
+	font-size: x-large;
+}
+.style4 {
+	text-align: center;
+}
+.style5 {
+	text-align: left;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding-bottom: 1px;
+}
+</style>
+</head><body><p class="style1">LINEGROS</p><p class="style2">Welcome to linegros!</p><p class="style2">欢迎来到主界面。该页面展示了一些导航。请根据需要来跳转哦。</p><p class="style3"><em><strong>快速导航</strong></em></p><p class="style2"><a href="index.htm">返回至主页</a></p><p class="style2"><a href="github/index.htm">Linegros Github导航</a></p><p class="style2"><a href="proinfo/index.htm">项目简介</a></p><p class="style2"><a href="new/index.htm">新闻</a></p><p class="style5">&nbsp;</p><p class="style4">(C) Copyright upbingun233<br>by Github Pages</p><p class="style4">&nbsp;</p></body></html>

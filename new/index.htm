@@ -43,5 +43,88 @@
             font-size: 12px;
             /* 文字大小 */
         }
+        @font-face {
+    font-family: OPPOSans;
+    src: url('https://cdn.jsdelivr.net/gh/Cat-AdTeam/Linegros@web/OPPOSans-Regular.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/Cat-AdTeam/Linegros@web/OPPOSans-Regular.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/Cat-AdTeam/Linegros@web/OPPOSans-Regular.ttf') format('ttf');
+    /* 添加其他字体格式，以提高兼容性 */
+    /* font-weight 和 font-style 可以根据需要进行设置 */
+  }
+
+@font-face {
+  font-family: HarmonyOSSansSC;
+    src: url('https://cdn.jsdelivr.net/gh/Cat-AdTeam/Linegros@web/HarmonyOS_Sans_SC_Regular.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/Cat-AdTeam/Linegros@web/HarmonyOS_Sans_SC_Regular.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/Cat-AdTeam/Linegros@web/HarmonyOS_Sans_SC_Regular.ttf') format('ttf');
+  }
+body {
+    font-family: OPPOSans, HarmonyOSSansSC, MiSans, Microsoft YaHei Ui, 微软雅黑; /* 如果无法加载自定义字体，则使用备用字体 */
+}
 </style>
+<script>
+    function fptcsc_TestBrowser()
+    {
+     
+     var ie4,ns,ms; 
+     ms = navigator.appVersion.indexOf("MSIE");
+     
+     ie4 = (ms>0) && (parseInt(navigator.appVersion.substring(ms+5, ms+6)) >= 4);
+     ns = false;
+     
+     return (ie4||ns);  
+    }
+    
+    function fptcsc_redirection()
+    {
+     
+     strBrowserLang = new String("");
+     
+     strBrowserLang = navigator.userLanguage; 
+       
+     
+     
+     
+     switch (strBrowserLang)
+     {
+     
+     case "zh-sg":  ;  
+     case "zh-cn": {   
+      
+        if (strChsSiteURL.length > 0) window.location.replace(strChsSiteURL); return true;}
+      
+     case "zh-hk": 
+     case "zh-mo": 
+     case "zh-tw":{ 
+     
+      if (strChtSiteURL.length > 0) window.location.replace(strChtSiteURL); return true;}
+      }
+    return false;
+    }
+     
+    </script>
+    <script LANGUAGE="JavaScript">
+    strChsSiteURL = "index.htm";
+    strChtSiteURL = "../zh_tw/new/index.htm";
+    strRedirectionPrompt = new String("<p>您的浏览器不支持根据您的浏览器语言自动重定向。 \ 请选择您要访问的语言...</p>");
+     
+    if (fptcsc_TestBrowser()&&fptcsc_redirection()) {}
+     else {
+      document.write (strRedirectionPrompt);
+     
+      
+      document.write("<input value='Simplified Chinese:' type=button onclick=");
+      document.write ("\""+"window.location.href='");
+      document.write (strChsSiteURL);
+      document.write ("'"+"\""+">");
+      
+      
+      document.write("<input value='Traditional Chinese' type=button onclick=");
+      document.write ("\""+"window.location.href='");
+      document.write (strChtSiteURL);
+      document.write ("'"+"\""+">");
+     
+      }
+      
+    </script>
 </head><body><div class="powered-by">Powered by GitHub Pages</div><div class="made-by">Made by upbingun233</div><p class="style1">LINEGROS</p><p style="font-size: 40px;" class="style2">Welcome to Linegros!</p><p class="style3"><em><strong>新闻</strong></em></p><p class="style2">2024年4月6日，upbingun 发布了<a style="text-decoration:none" target="_blank" href="https://github.com/upbingun233/Linegros/releases/tag/Preview">预发布版本</a>。</p><p class="style2">2024年4月8日，upbingun 暂停 <a target="_blank" style="text-decoration:none" href="https://openjfx.io/">JavaFX</a> 版本的开发。</p><p class="style2">&nbsp;</p><p class="style2"><em><strong>快速导航</strong></em></p><p class="style2"><a style="text-decoration:none" href="../index.htm">返回至主页</a></p><p class="style2"><a style="text-decoration:none" href="../github/index.htm">Linegros GitHub 导航</a></p><p class="style2"><a style="text-decoration:none" href="../proinfo/index.htm">项目简介</a></p><p class="style2"><a style="text-decoration:none" href="index.htm">新闻</a></p><p class="style5">&nbsp;</p><p class="style4">Copyright (C) upbingun233</p></body></html>

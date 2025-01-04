@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'OPPO Sans'; /* 自定义字体名称 */
+    src: url('fonts/OPPOSans-Regular.ttf') format('truetype'); /* 字体文件路径和格式 */
+    font-weight: normal; /* 字体粗细 */
+    font-style: normal; /* 字体样式 */
+}
+
+body {
+    font-family: 'OPPO Sans', sans-serif; /* 使用自定义字体，同时提供一个备选字体 */
+}
+
+/* style.css */
+@font-face {
+    font-family: 'OPPO Sans';
+    src: url('fonts/OPPOSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'OPPO Sans', sans-serif;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    margin: 0 20px; /* 上下边距为0，左右边距为20px */
+}
+
+a {
+    display: inline-block;
+    margin: 0 20px; /* 上下边距为0，左右边距为20px */
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* style.css */
+
+/* 重置一些基本的样式 */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置导航栏的样式 */
+.navbar {
+    background-color: #000; /* 黑色背景 */
+    color: #fff; /* 白色文字 */
+    display: flex; /* 使用flex布局 */
+    justify-content: center; /* 使导航项居中 */
+    align-items: center; /* 垂直居中 */
+    height: 50px; /* 导航栏高度 */
+}
+
+/* 设置导航栏中链接的样式 */
+.navbar a {
+    color: #fff; /* 白色文字 */
+    text-decoration: none; /* 去掉下划线 */
+    padding: 10px 20px; /* 内边距 */
+    margin: 0 10px; /* 外边距，用于链接之间的间隔 */
+    border-radius: 5px; /* 圆角 */
+    transition: background-color 0.3s; /* 背景颜色变化的过渡效果 */
+}
+
+/* 设置导航栏中链接悬停时的样式 */
+.navbar a:hover {
+    background-color: #333; /* 悬停时的背景颜色 */
+}
+
+/* 如果你想要为"访问原网站"这个按钮添加不同的样式，你可以这样做 */
+.navbar a.button {
+    background-color: #000000; /* 按钮背景颜色 */
+}
+
+.navbar a.button:hover {
+    background-color: ##3f3f3f; /* 按钮悬停时的背景颜色 */
+}
+
+/* style.css */
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative; /* 相对定位 */
+    height: 200px; /* 根据需要调整高度 */
+}
+
+.navbar {
+    position: absolute; /* 绝对定位 */
+    bottom: 0; /* 从底部开始定位 */
+    width: 100%; /* 导航栏宽度 */
+    background-color: #000; /* 黑色背景 */
+    color: #fff; /* 白色文字 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* 导航栏高度 */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #333;
+}
+
+img {
+    display: block; /* 使图片成为块级元素 */
+    margin: 0 auto; /* 水平居中 */
+}
+
+/* 首页背景 */
+.home {
+    background-color: #ffffff; 
+}
+
+.beatmapID1 {
+    background-image: url('  '); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
